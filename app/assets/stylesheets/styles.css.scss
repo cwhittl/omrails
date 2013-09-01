@@ -1,0 +1,32 @@
+$baseFontFamily: Yanone Kaffeesatz;
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+
+/* Can override bootstrap by going to 
+http://getbootstrap.com/2.3.2/customize.html
+but instead of @ use $
+For example @linkColor = $linkColor
+*/
+
+$navbarBackgroundHighlight: white;
+$navbarBackground: white;
+$btnPrimaryBackground: gray;
+
+@import 'bootstrap';
+body{
+    padding-top: 60px;
+}
+
+@import 'bootstrap-responsive';
+
+.navbar-inner{
+    @include box-shadow(none !important);
+    border: 0;
+}
+
+.footer{
+    margin-top: 50px;
+    color: $grayLight;
+    a{
+        color: $gray;
+    }
+}
