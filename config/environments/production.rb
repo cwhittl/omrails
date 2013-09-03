@@ -1,4 +1,7 @@
 Omrails::Application.configure do
+  # for devise
+  # In production, :host should be set to the actual host of your application.
+  config.action_mailer.default_url_options = { :host => 'enigmatic-scrubland-9188.herokuapp.com' }
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
